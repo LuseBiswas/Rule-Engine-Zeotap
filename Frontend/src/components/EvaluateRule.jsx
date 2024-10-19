@@ -18,7 +18,7 @@ const EvaluateRule = () => {
   useEffect(() => {
     const getRuleIds = async () => {
       try {
-        const response = await fetch('http://localhost:3020/api/rules/all');
+        const response = await fetch('https://rule-engine-zeotap.onrender.com/api/rules/all');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
