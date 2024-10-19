@@ -1,7 +1,7 @@
 // src/utils/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3020/api'; // Update with your backend URL
+const API_URL = 'https://rule-engine-zeotap.onrender.com/api'; 
 
 export const createRule = async (ruleString) => {
   try {
