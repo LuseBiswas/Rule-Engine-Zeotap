@@ -10,7 +10,7 @@ const DisplayRules = () => {
   useEffect(() => {
     const fetchRules = async () => {
       try {
-        const response = await axios.get('http://localhost:3020/api/rules/all');
+        const response = await axios.get('https://rule-engine-zeotap.onrender.com/api/rules/all');
         setRules(response.data);
       } catch (error) {
         console.error('Error fetching rules:', error.response ? error.response.data : error.message);
